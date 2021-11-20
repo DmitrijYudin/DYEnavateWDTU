@@ -1,0 +1,12 @@
+{
+    "al.defaultLaunchConfigurationName":"Deploy",
+    "CRC.FilenamePattern": "<ObjectNameShort>. <ObjectTypeShortPascalCase>.al",
+    "CRC.FilenamePatternExtensions": "<ObjectNameShort>. <ObjectTypeShortPascalCase>.al",
+    "CRC.FilenamePatternPageCustomization":"<ObjectNameShort>. <ObjectTypeShortPascalCase>.al",
+    "CRC.AlSubFolderName":"None",
+    "CRC.OnSaveAlFileAction": "Rename",
+    "CRC.ObjectNamePrefix":"DY",
+    "CRC.ObjectNameSufFix": "",
+    "CRC.RemoveSuffixFromFilename": false,
+    "CRC.RemovePrefixFromFilename": false
+}
