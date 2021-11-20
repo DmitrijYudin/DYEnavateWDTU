@@ -6,8 +6,8 @@ pageextension 50400 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
     var
-    
+
     begin
-        Message('ok');
+        Message('ok home');
     end;
 }
