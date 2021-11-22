@@ -6,8 +6,16 @@ pageextension 50400 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
     var
-
+        Customer1: Record Customer;
+        Customer2: Record Customer;
     begin
-        Message('ok home');
+        Customer1.FindFirst();
+        Customer2.FindFirst();
+        Customer1.Address := '1';
+        Customer2.Address := '2';
+        Customer1.Modify();
+        Customer2.Modify();
+
+        //Message('ok work');
     end;
 }
