@@ -16,6 +16,6 @@ pageextension 50100 CustomerListExt extends "Customer List"
         Customer1.Modify();
         Customer2.Modify();
 
-        //Message('ok work');
+        //Message('ok work 24112021');
     end;
 }
