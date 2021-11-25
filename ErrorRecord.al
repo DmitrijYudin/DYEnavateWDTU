@@ -9,13 +9,17 @@ pageextension 50100 CustomerListExt extends "Customer List"
         Customer1: Record Customer;
         Customer2: Record Customer;
     begin
-        Customer1.FindFirst();
-        Customer2.FindFirst();
-        Customer1.Address := '1';
-        Customer2.Address := '2';
-        Customer1.Modify();
-        Customer2.Modify();
-
-        //Message('ok work');
+        if Customer1.FindFirst() then begin
+            Customer1.Address := '1';
+            //Rec.Modify;
+            Customer1.Modify()
+        end;
+        //Customer2.FindFirst();
+        //Customer1.Address := '1';
+        //Customer2.Address := '2';
+        //Customer1.Modify();
+        //Customer2.Modify();
+        //Modify();
+        Message('ok work');
     end;
 }
