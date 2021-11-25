@@ -3,6 +3,7 @@ table 50100 "Radio Show"
     Caption = 'Radio Show';
     DataClassification = ToBeClassified;
 
+
     fields
     {
         field(1; "No."; Code[20])
@@ -14,6 +15,8 @@ table 50100 "Radio Show"
         {
             Caption = 'Radio Show Type';
             DataClassification = CustomerContent;
+            TableRelation = "Radio Show Type";
+
         }
         field(20; Name; Text[50])
         {
@@ -55,6 +58,17 @@ table 50100 "Radio Show"
             Caption = 'Royalty Cost';
             DataClassification = CustomerContent;
         }
+        field(1000; Frequency; Option)
+        {
+            Caption = 'Frequency';
+            DataClassification = ToBeClassified;
+            OptionMembers = Hourly,Daily,Weekly,Mounthly;
+        }
+        field(1010; "PSA Planned Quantity"; Integer)
+        {
+            DataClassification = ToBeClassified;
+
+        }
     }
     keys
     {
@@ -62,6 +76,21 @@ table 50100 "Radio Show"
         {
             Clustered = true;
         }
+        key(Name; Name)
+        {
+        }
+        key(HostName; "Host Name")
+        {
+        }
     }
-
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Name, "Host Name")
+        {
+        }
+        fieldgroup(Brick; "No.", Name, "Audience Share")
+        {
+        }
+    }
 }
+
