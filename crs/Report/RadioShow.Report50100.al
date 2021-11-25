@@ -4,6 +4,7 @@ report 50100 "Radio Show"
     Caption = 'Radio Show';
     UsageCategory = ReportsAndAnalysis;
     WordLayout = 'RadioShows.docx';
+    DefaultLayout = Word;
     //RDLCLayout = 'RadioShows.RDLC';
     dataset
     {
