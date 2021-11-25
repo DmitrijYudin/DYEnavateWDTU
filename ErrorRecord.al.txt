@@ -9,7 +9,6 @@ pageextension 50100 CustomerListExt extends "Customer List"
         Customer1: Record Customer;
         Customer2: Record Customer;
     begin
-<<<<<<< HEAD
         if Customer1.FindFirst() then begin
             Customer1.Address := '1';
             //Rec.Modify;
@@ -22,15 +21,5 @@ pageextension 50100 CustomerListExt extends "Customer List"
         //Customer2.Modify();
         //Modify();
         Message('ok work');
-=======
-        Customer1.FindFirst();
-        Customer2.FindFirst();
-        Customer1.Address := '1';
-        Customer2.Address := '2';
-        Customer1.Modify();
-        Customer2.Modify();
-
-        //Message('ok work 24112021');
->>>>>>> 0278548430a58f56de7dc1af4d09a33689543995
     end;
 }
