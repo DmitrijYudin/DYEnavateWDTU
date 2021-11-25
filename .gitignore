@@ -48,9 +48,11 @@ Thumbs.db
 *.mov
 *.wmv
 
-*.json
 .vscode/*
 .alpackages/*
 
+*.json
+!app.json
+!setting.json
 !app.json
 
