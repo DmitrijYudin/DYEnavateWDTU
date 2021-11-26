@@ -2,10 +2,6 @@ table 50100 "Radio Show"
 {
     Caption = 'Radio Show';
     DataClassification = ToBeClassified;
-    LookupPageId = "Radio Show List";
-    //DrillDownPageId = "Radio Show List";
-
-
     fields
     {
         field(1; "No."; Code[20])
@@ -71,6 +67,45 @@ table 50100 "Radio Show"
             DataClassification = ToBeClassified;
 
         }
+        field(1020; "Ads Planned Quantity"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(1030; "News Required"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+            InitValue = true;
+        }
+        field(1040; "News Duration"; Duration)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(1050; "Sports Required"; Boolean)
+        {
+            InitValue = true;
+            DataClassification = ToBeClassified;
+        }
+        field(1060; "Sports Duration"; Duration)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1070; "Weather Required"; Boolean)
+        {
+            InitValue = true;
+            DataClassification = ToBeClassified;
+        }
+
+        field(1080; "Weather Duration"; Duration)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1090; "Date Filter"; Date)
+        {
+            FieldClass = FlowField;
+        }
+
     }
     keys
     {
