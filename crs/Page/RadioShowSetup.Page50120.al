@@ -1,17 +1,15 @@
-page 50103 "Radio Show Setup"
+page 50120 "Radio Show Setup"
 {
 
     Caption = 'Radio Show Setup';
     PageType = Card;
     SourceTable = "Radio Show Setup";
-    ApplicationArea = all;
-    UsageCategory = Administration;
 
     layout
     {
         area(content)
         {
-            group(Numbering)
+            group(General)
             {
                 field("Radio Show Nos."; Rec."Radio Show Nos.")
                 {
