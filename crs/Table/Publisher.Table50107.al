@@ -1,21 +1,19 @@
-table 50102 "Radio Show Setup"
+table 50107 "Publisher"
 {
-    Caption = 'Radio Show Setup';
+    Caption = 'Publisher';
     DataClassification = ToBeClassified;
-
 
     fields
     {
-        field(1; "Code"; Code[10])
+        field(1; "Code"; Code[20])
         {
             Caption = 'Code';
             DataClassification = CustomerContent;
         }
-        field(2; "Radio Show Nos."; Code[20])
+        field(10; Discription; Text[50])
         {
-            Caption = 'Radio Show Nos.';
+            Caption = 'Discription';
             DataClassification = CustomerContent;
-            TableRelation = "No. Series";
         }
     }
     keys
