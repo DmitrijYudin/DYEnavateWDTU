@@ -4,12 +4,14 @@ page 50103 "Radio Show Setup"
     Caption = 'Radio Show Setup';
     PageType = Card;
     SourceTable = "Radio Show Setup";
+    ApplicationArea = all;
+    UsageCategory = Administration;
 
     layout
     {
         area(content)
         {
-            group(General)
+            group(Numbering)
             {
                 field("Radio Show Nos."; Rec."Radio Show Nos.")
                 {

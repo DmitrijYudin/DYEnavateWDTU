@@ -1,4 +1,4 @@
-enum 50100 "Frequency Enum"
+enum 50100 "Frequency"
 {
     Extensible = true;
 

@@ -5,7 +5,7 @@ page 50102 "Radio Show Type"
     Caption = 'Radio Show Type';
     PageType = List;
     SourceTable = "Radio Show Type";
-    UsageCategory = Administration;
+    UsageCategory = Lists;
 
     layout
     {

@@ -7,6 +7,10 @@ page 50100 "Radio Show List"
     SourceTable = "Radio Show";
     UsageCategory = Lists;
     CardPageId = "Radio Show Card";
+    Editable = false;
+    ModifyAllowed = true;
+    DeleteAllowed = true;
+    InsertAllowed = true;
 
     layout
     {
@@ -64,6 +68,60 @@ page 50100 "Radio Show List"
                     ToolTip = 'Specifies the value of the Royalty Cost field.';
                     ApplicationArea = All;
                 }
+                field("Ads Planned Quantity"; Rec."Ads Planned Quantity")
+                {
+                    ToolTip = 'Specifies the value of the Ads Planned Quantity field.';
+                    ApplicationArea = All;
+                }
+                field(Frequency; Rec.Frequency)
+                {
+                    ToolTip = 'Specifies the value of the Frequency field.';
+                    ApplicationArea = All;
+                }
+                field("Frequency Enum"; Rec."Frequency Enum")
+                {
+                    ToolTip = 'Specifies the value of the Frequency Enum field.';
+                    ApplicationArea = All;
+                }
+                field("News Duration"; Rec."News Duration")
+                {
+                    ToolTip = 'Specifies the value of the News Duration field.';
+                    ApplicationArea = All;
+                }
+                field("News Required"; Rec."News Required")
+                {
+                    ToolTip = 'Specifies the value of the News Required field.';
+                    ApplicationArea = All;
+                }
+                field("PSA Planned Quantity"; Rec."PSA Planned Quantity")
+                {
+                    ToolTip = 'Specifies the value of the PSA Planned Quantity field.';
+                    ApplicationArea = All;
+                }
+                field("Sports Duration"; Rec."Sports Duration")
+                {
+                    ToolTip = 'Specifies the value of the Sports Duration field.';
+                    ApplicationArea = All;
+                }
+                field("Sports Required"; Rec."Sports Required")
+                {
+                    ToolTip = 'Specifies the value of the Sports Required field.';
+                    ApplicationArea = All;
+                }
+                field("Weather Duration"; Rec."Weather Duration")
+                {
+                    ToolTip = 'Specifies the value of the Weather Duration field.';
+                    ApplicationArea = All;
+                }
+                field("Weather Required"; Rec."Weather Required")
+                {
+                    ToolTip = 'Specifies the value of the Weather Required field.';
+                    ApplicationArea = All;
+                }
+
+
+
+
             }
         }
     }
