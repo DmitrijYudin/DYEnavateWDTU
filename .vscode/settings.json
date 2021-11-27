@@ -1,0 +1,12 @@
+{
+    "al.defaultLaunchConfigurationName": "Deploy",
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
+    "CRS.AlSubFolderName": "None",
+    "CRS.OnSaveAlFileAction": "Rename",
+    "CRS.ObjectNamePrefix": "",
+    "CRS.ObjectNameSuffix": "",
+    "CRS.RemoveSuffixFromFilename": false,
+    "CRS.RemovePrefixFromFilename": false
+}

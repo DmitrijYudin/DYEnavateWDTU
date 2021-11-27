@@ -53,6 +53,6 @@ Thumbs.db
 
 *.json
 !app.json
-!setting.json
+!settings.json
 !app.json
 
