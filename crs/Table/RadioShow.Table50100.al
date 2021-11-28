@@ -158,7 +158,7 @@ table 50100 "Radio Show"
     }
     fieldgroups
     {
-        fieldgroup(DropDown; "No.", Name, "Host Name")
+        fieldgroup(DropDown; "No.", Name, "Host Name", "Radio Show Type")
         {
         }
         fieldgroup(Brick; "No.", Name, "Audience Share")

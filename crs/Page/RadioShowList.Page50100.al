@@ -1,13 +1,12 @@
 page 50100 "Radio Show List"
 {
-
     ApplicationArea = All;
     Caption = 'Radio Show List';
     PageType = List;
     SourceTable = "Radio Show";
     UsageCategory = Lists;
     CardPageId = "Radio Show Card";
-    Editable = false;
+    Editable = true;
     ModifyAllowed = true;
     DeleteAllowed = true;
     InsertAllowed = true;
@@ -118,10 +117,6 @@ page 50100 "Radio Show List"
                     ToolTip = 'Specifies the value of the Weather Required field.';
                     ApplicationArea = All;
                 }
-
-
-
-
             }
         }
     }

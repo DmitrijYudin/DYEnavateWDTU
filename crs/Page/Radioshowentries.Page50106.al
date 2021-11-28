@@ -1,12 +1,12 @@
-page 50106 "Radio show entries"
+page 50106 "Radio Show Entries"
 {
-    
+
     ApplicationArea = All;
     Caption = 'Radio show entries';
     PageType = List;
     SourceTable = "Radio Show Entry";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -76,5 +76,5 @@ page 50106 "Radio show entries"
             }
         }
     }
-    
+
 }
