@@ -1,12 +1,12 @@
 page 50107 "Listenership entries"
 {
-    
+
     ApplicationArea = All;
     Caption = 'Listenership entries';
     PageType = List;
     SourceTable = "Listenership Entry";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -61,5 +61,5 @@ page 50107 "Listenership entries"
             }
         }
     }
-    
+
 }
