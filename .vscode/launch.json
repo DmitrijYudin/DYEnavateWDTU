@@ -8,7 +8,7 @@
             "environmentType": "Sandbox",
             "environmentName": "sandbox",
             "startupObjectId": 50100,
-            "startupObjectType": "Page",
+            "startupObjectType": "Report",
             "breakOnError": true,
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
