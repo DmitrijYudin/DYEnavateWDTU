@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="NoCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>NoCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>NoCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RadioShowTypeCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RadioShowTypeCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RadioShowTypeCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>NameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>NameCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RunTimeCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RunTimeCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RunTimeCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="HostNoCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>HostNoCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>HostNoCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="HostNameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>HostNameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>HostNameCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AverageListenersCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AverageListenersCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AverageListenersCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AudienceShareCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AudienceShareCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AudienceShareCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AdvertisingRevenueCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AdvertisingRevenueCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AdvertisingRevenueCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RoyaltyCostCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RoyaltyCostCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RoyaltyCostCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No">
+          <DataField>No</DataField>
+        </Field>
+        <Field Name="RadioShowType">
+          <DataField>RadioShowType</DataField>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="RunTime">
+          <DataField>RunTime</DataField>
+        </Field>
+        <Field Name="HostNo">
+          <DataField>HostNo</DataField>
+        </Field>
+        <Field Name="HostName">
+          <DataField>HostName</DataField>
+        </Field>
+        <Field Name="AverageListeners">
+          <DataField>AverageListeners</DataField>
+        </Field>
+        <Field Name="AverageListenersFormat">
+          <DataField>AverageListenersFormat</DataField>
+        </Field>
+        <Field Name="AudienceShare">
+          <DataField>AudienceShare</DataField>
+        </Field>
+        <Field Name="AudienceShareFormat">
+          <DataField>AudienceShareFormat</DataField>
+        </Field>
+        <Field Name="AdvertisingRevenue">
+          <DataField>AdvertisingRevenue</DataField>
+        </Field>
+        <Field Name="AdvertisingRevenueFormat">
+          <DataField>AdvertisingRevenueFormat</DataField>
+        </Field>
+        <Field Name="RoyaltyCost">
+          <DataField>RoyaltyCost</DataField>
+        </Field>
+        <Field Name="RoyaltyCostFormat">
+          <DataField>RoyaltyCostFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
